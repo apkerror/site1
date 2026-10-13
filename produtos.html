@@ -2,26 +2,101 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
   <meta name="theme-color" content="#254f3e">
+
   <meta
     name="description"
-    content="Explore o catálogo ilustrativo de produtos da Pata & Companhia."
+    content="Conheça os alimentos, brinquedos e acessórios da Pata & Companhia."
   >
 
   <title>Produtos | Pata & Companhia</title>
 
+  <!-- Estilo geral do site -->
   <link rel="stylesheet" href="estilo.css">
+
+  <!-- Menu e filtros de produtos -->
   <script src="script.js" defer></script>
+
+  <!-- Estilos específicos das fotos dos produtos -->
+  <style>
+    .product-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
+      margin: 0;
+      padding: 20px;
+      overflow: hidden;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .product-photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-photo img {
+      transform: scale(1.05);
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .product-card .price {
+      margin-top: auto;
+    }
+
+    .product-card .text-link {
+      margin-top: 8px;
+    }
+
+    @media (max-width: 720px) {
+      .product-photo {
+        height: 240px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .product-photo img {
+        transition: none;
+      }
+
+      .product-card:hover .product-photo img {
+        transform: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo">
+    Pular para o conteúdo
+  </a>
 
   <div class="top">
     CARINHO EM CADA DETALHE. CUIDADO EM CADA PATINHA.
   </div>
 
+  <!-- CABEÇALHO -->
   <header>
     <div class="wrap nav">
       <a class="brand" href="index.html">
@@ -51,10 +126,13 @@
         <a href="contato.html">Contato</a>
       </nav>
 
-      <a class="btn" href="contato.html">Vamos conversar ↗</a>
+      <a class="btn" href="contato.html">
+        Vamos conversar ↗
+      </a>
     </div>
   </header>
 
+  <!-- CONTEÚDO -->
   <main id="conteudo" class="wrap">
     <div class="page-head">
       <div class="breadcrumb">
@@ -69,17 +147,18 @@
       </h1>
 
       <p class="lead">
-        Explore uma seleção ilustrativa de alimentos, brinquedos
-        e acessórios para a rotina de cães e gatos.
+        Alimentos, brinquedos e acessórios para deixar
+        a rotina do seu companheiro ainda melhor.
       </p>
     </div>
 
-    <section class="section-compact">
+    <section class="section-compact" aria-label="Catálogo de produtos">
       <div class="notice">
-        Catálogo demonstrativo: produtos e preços fictícios.
+        Catálogo demonstrativo: produtos e preços ilustrativos.
         Este site não realiza vendas.
       </div>
 
+      <!-- FILTROS -->
       <div
         class="filters"
         role="group"
@@ -127,14 +206,16 @@
       </p>
 
       <div class="grid">
-        <article class="card" data-category="caes">
-          <div class="product-art" aria-hidden="true">
-            <div class="bag">
-              <b>PATA & CIA</b>
-              <span>🐕</span>
-              <b>TODO DIA</b>
-              <small>cuidado & nutrição</small>
-            </div>
+
+        <!-- PRODUTO 1 -->
+        <article class="card product-card" data-category="caes">
+          <div class="product-photo">
+            <img
+              src="imagens/racao-caes.jpg"
+              alt="Pacote de ração para cães adultos"
+              width="400"
+              height="400"
+            >
           </div>
 
           <div class="card-body">
@@ -142,7 +223,10 @@
 
             <h3>Ração para cães adultos</h3>
 
-            <p>Pacote ilustrativo · 3 kg</p>
+            <p>
+              Uma opção para a alimentação diária do seu cão.
+              Pacote ilustrativo de 3 kg.
+            </p>
 
             <div class="price">R$ 89,90</div>
 
@@ -152,14 +236,15 @@
           </div>
         </article>
 
-        <article class="card" data-category="gatos">
-          <div class="product-art" aria-hidden="true">
-            <div class="bag">
-              <b>PATA & CIA</b>
-              <span>🐈</span>
-              <b>TODO DIA</b>
-              <small>cuidado & nutrição</small>
-            </div>
+        <!-- PRODUTO 2 -->
+        <article class="card product-card" data-category="gatos">
+          <div class="product-photo">
+            <img
+              src="imagens/racao-gatos.jpg"
+              alt="Pacote de ração para gatos adultos"
+              width="400"
+              height="400"
+            >
           </div>
 
           <div class="card-body">
@@ -167,7 +252,10 @@
 
             <h3>Ração para gatos adultos</h3>
 
-            <p>Pacote ilustrativo · 1 kg</p>
+            <p>
+              Uma opção para a rotina alimentar do seu gato.
+              Pacote ilustrativo de 1 kg.
+            </p>
 
             <div class="price">R$ 39,90</div>
 
@@ -177,9 +265,19 @@
           </div>
         </article>
 
-        <article class="card" data-category="acessorios">
-          <div class="product-art" aria-hidden="true">
-            <span class="product-emoji">🎾</span>
+        <!-- PRODUTO 3 -->
+        <article
+          class="card product-card"
+          data-category="acessorios"
+        >
+          <div class="product-photo">
+            <img
+              src="imagens/bola.jpg"
+              alt="Bola de brinquedo para pets"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
           </div>
 
           <div class="card-body">
@@ -187,7 +285,10 @@
 
             <h3>Bola para brincar</h3>
 
-            <p>Brinquedo ilustrativo · unidade</p>
+            <p>
+              Para compartilhar momentos de diversão
+              com seu companheiro. Vendida por unidade.
+            </p>
 
             <div class="price">R$ 19,90</div>
 
@@ -197,9 +298,19 @@
           </div>
         </article>
 
-        <article class="card" data-category="acessorios">
-          <div class="product-art" aria-hidden="true">
-            <span class="product-emoji">🛏️</span>
+        <!-- PRODUTO 4 -->
+        <article
+          class="card product-card"
+          data-category="acessorios"
+        >
+          <div class="product-photo">
+            <img
+              src="imagens/caminha.jpg"
+              alt="Caminha para descanso de pets"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
           </div>
 
           <div class="card-body">
@@ -207,7 +318,10 @@
 
             <h3>Caminha aconchegante</h3>
 
-            <p>Modelo ilustrativo · tamanho M</p>
+            <p>
+              Um cantinho para os momentos de descanso
+              do seu pet. Modelo ilustrativo tamanho M.
+            </p>
 
             <div class="price">R$ 129,90</div>
 
@@ -217,9 +331,16 @@
           </div>
         </article>
 
-        <article class="card" data-category="caes">
-          <div class="product-art" aria-hidden="true">
-            <span class="product-emoji">🦮</span>
+        <!-- PRODUTO 5 -->
+        <article class="card product-card" data-category="caes">
+          <div class="product-photo">
+            <img
+              src="imagens/guia.jpg"
+              alt="Guia para passear com cães"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
           </div>
 
           <div class="card-body">
@@ -227,7 +348,10 @@
 
             <h3>Guia para passeios</h3>
 
-            <p>Modelo ilustrativo · 1,2 m</p>
+            <p>
+              Um acessório para acompanhar as saídas
+              com seu cão. Modelo ilustrativo de 1,2 m.
+            </p>
 
             <div class="price">R$ 34,90</div>
 
@@ -237,9 +361,16 @@
           </div>
         </article>
 
-        <article class="card" data-category="gatos">
-          <div class="product-art" aria-hidden="true">
-            <span class="product-emoji">🧶</span>
+        <!-- PRODUTO 6 -->
+        <article class="card product-card" data-category="gatos">
+          <div class="product-photo">
+            <img
+              src="imagens/brinquedo-gato.jpg"
+              alt="Bolinha de brinquedo para gatos"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
           </div>
 
           <div class="card-body">
@@ -247,7 +378,10 @@
 
             <h3>Bolinha para gatos</h3>
 
-            <p>Brinquedo ilustrativo · unidade</p>
+            <p>
+              Para variar as brincadeiras e os momentos
+              de interação com seu gato. Vendida por unidade.
+            </p>
 
             <div class="price">R$ 14,90</div>
 
@@ -259,6 +393,7 @@
       </div>
     </section>
 
+    <!-- CHAMADA PARA CONTATO -->
     <div class="band">
       <div>
         <h2>
@@ -267,8 +402,8 @@
         </h2>
 
         <p>
-          Conheça nossas opções e descubra o cuidado que combina
-          com seu pet.
+          Conheça nossas opções e descubra o cuidado
+          que combina com seu pet.
         </p>
       </div>
 
@@ -278,6 +413,7 @@
     </div>
   </main>
 
+  <!-- RODAPÉ -->
   <footer>
     <div class="wrap">
       <div class="footer-grid">
@@ -296,9 +432,17 @@
           <strong>Explore</strong>
 
           <ul>
-            <li><a href="sobre.html">Nossa história</a></li>
-            <li><a href="servicos.html">Nossos serviços</a></li>
-            <li><a href="produtos.html">Catálogo de produtos</a></li>
+            <li>
+              <a href="sobre.html">Nossa história</a>
+            </li>
+
+            <li>
+              <a href="servicos.html">Nossos serviços</a>
+            </li>
+
+            <li>
+              <a href="produtos.html">Catálogo de produtos</a>
+            </li>
           </ul>
         </div>
 
@@ -306,8 +450,13 @@
           <strong>Conte com a gente</strong>
 
           <ul>
-            <li><a href="dicas.html">Dicas de cuidado</a></li>
-            <li><a href="contato.html">Fale com a equipe</a></li>
+            <li>
+              <a href="dicas.html">Dicas de cuidado</a>
+            </li>
+
+            <li>
+              <a href="contato.html">Fale com a equipe</a>
+            </li>
           </ul>
 
           <p>
@@ -319,10 +468,13 @@
 
       <div class="footer-bottom">
         <span>
-          © 2026 Pata & Companhia · Projeto acadêmico de marca fictícia.
+          © 2026 Pata & Companhia ·
+          Projeto acadêmico de marca fictícia.
         </span>
 
-        <span>Feito com carinho por quem ama pets.</span>
+        <span>
+          Feito com carinho por quem ama pets.
+        </span>
       </div>
     </div>
   </footer>
