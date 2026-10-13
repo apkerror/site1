@@ -1,0 +1,227 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 510 450"
+  role="img"
+  aria-labelledby="title description"
+>
+  <title id="title">Cachorro e gato no jardim</title>
+
+  <desc id="description">
+    Ilustração de um cachorro caramelo com coleira verde,
+    acompanhado por um gato claro em um jardim.
+  </desc>
+
+  <!-- Fundo circular -->
+  <circle
+    cx="261"
+    cy="226"
+    r="168"
+    fill="#d8dfb4"
+  />
+
+  <!-- Chão -->
+  <path
+    d="M0 390Q245 329 510 395V450H0"
+    fill="#bdc997"
+  />
+
+  <!-- Planta à direita -->
+  <path
+    d="
+      M412 378q-28-95 4-157
+      m-6 76q-55-8-47-41 38 1 47 41
+      m2-30q43-11 35-44-35 2-35 44
+    "
+    fill="#85965f"
+    stroke="#85965f"
+    stroke-width="5"
+  />
+
+  <!-- Planta à esquerda -->
+  <path
+    d="
+      M95 376q20-66-7-113
+      m13 70q-39-5-43-32 33-7 43 32
+    "
+    fill="#85965f"
+  />
+
+  <!-- Sombra -->
+  <ellipse
+    cx="260"
+    cy="407"
+    rx="141"
+    ry="16"
+    fill="#a8b884"
+  />
+
+  <!-- Cauda do cachorro -->
+  <path
+    d="M279 333q74-80 88-30t-65 66"
+    fill="none"
+    stroke="#c88951"
+    stroke-width="26"
+    stroke-linecap="round"
+  />
+
+  <!-- Corpo do cachorro -->
+  <path
+    d="M160 385q-6-120 49-157h67q52 38 33 160"
+    fill="#ce955b"
+  />
+
+  <!-- Peito -->
+  <path
+    d="M207 267q-14 58-6 119h73q5-75-12-119"
+    fill="#f3dec0"
+  />
+
+  <!-- Patas -->
+  <rect
+    x="160"
+    y="342"
+    width="46"
+    height="65"
+    rx="19"
+    fill="#dba66c"
+  />
+
+  <rect
+    x="270"
+    y="342"
+    width="46"
+    height="65"
+    rx="19"
+    fill="#dba66c"
+  />
+
+  <!-- Orelhas -->
+  <path
+    d="
+      M161 145q-63-7-46 75t59 6
+      m98-83q70-17 52 68t-51 21
+    "
+    fill="#9e633d"
+  />
+
+  <!-- Cabeça -->
+  <path
+    d="
+      M153 147q26-53 95-35
+      62 14 53 94
+      -4 65-72 71
+      -82-2-81-66
+    "
+    fill="#dda76d"
+  />
+
+  <!-- Mancha clara -->
+  <path
+    d="M223 116q-22 47-7 89h28q14-49-3-91"
+    fill="#f5dfbd"
+  />
+
+  <!-- Olhos -->
+  <ellipse
+    cx="203"
+    cy="194"
+    rx="8"
+    ry="10"
+    fill="#203a2e"
+  />
+
+  <ellipse
+    cx="263"
+    cy="194"
+    rx="8"
+    ry="10"
+    fill="#203a2e"
+  />
+
+  <!-- Focinho -->
+  <ellipse
+    cx="234"
+    cy="225"
+    rx="40"
+    ry="29"
+    fill="#f3dec0"
+  />
+
+  <!-- Nariz -->
+  <path
+    d="M220 218q14-9 28 0-3 18-14 18-12-2-14-18"
+    fill="#203a2e"
+  />
+
+  <!-- Língua -->
+  <path
+    d="M221 244q12 12 25 0v16q-12 16-25 0"
+    fill="#cd7b6a"
+  />
+
+  <!-- Coleira -->
+  <path
+    d="M177 269q57 29 112-1"
+    fill="none"
+    stroke="#345947"
+    stroke-width="15"
+  />
+
+  <!-- Medalhinha -->
+  <circle
+    cx="234"
+    cy="287"
+    r="11"
+    fill="#e8c565"
+  />
+
+  <!-- Corpo e cabeça do gato -->
+  <path
+    d="
+      M357 391q-22-73 15-101
+      l-5-35 31 17 26-16
+      -1 41q24 37 7 94
+    "
+    fill="#f6efe0"
+  />
+
+  <!-- Olhos do gato -->
+  <path
+    d="M381 316l5 1m24-1 5-1"
+    stroke="#284838"
+    stroke-width="5"
+    stroke-linecap="round"
+  />
+
+  <!-- Nariz do gato -->
+  <path
+    d="M396 325l5 1-3 5z"
+    fill="#b77c71"
+  />
+
+  <!-- Cauda do gato -->
+  <path
+    d="M427 373q45-48 39 4-2 27-48 22"
+    fill="none"
+    stroke="#f6efe0"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- Detalhes decorativos -->
+  <path
+    d="
+      M91 116l4-12 5 12
+      12 4-12 5-5 12
+      -4-12-13-5z
+    "
+    fill="#faf9f3"
+  />
+
+  <circle
+    cx="369"
+    cy="128"
+    r="7"
+    fill="#faf9f3"
+  />
+</svg>
