@@ -974,3 +974,25 @@ footer {
     scroll-behavior: auto;
   }
 }
+
+/* Fotos dos cartões da página inicial */
+.service-photo {
+  height: 220px;
+  overflow: hidden;
+  background: #e8ecd9;
+}
+
+.service-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ajuste para celular */
+@media (max-width: 720px) {
+  .service-photo {
+    height: 200px;
+  }
+}
